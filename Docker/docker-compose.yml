@@ -1,0 +1,11 @@
+# service
+services:
+  nginx:
+    build: ./nginx/
+    image: nginx:web-page
+    container_name: nginx
+    init: true
+    ports:
+      - "80:80"
+    volumes:
+      - ../HTML:/var/www/html
