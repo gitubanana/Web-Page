@@ -1,4 +1,4 @@
-# service
+# services
 services:
   nginx:
     build: ./nginx/
@@ -9,3 +9,11 @@ services:
       - "80:80"
     volumes:
       - ../Web-Page:/var/www/html
+    networks:
+      - web-page
+
+# networks
+networks:
+  web-page:
+    name: web-page-network
+    driver: bridge
