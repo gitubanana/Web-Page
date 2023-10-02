@@ -5,25 +5,32 @@
         <meta charset="utf-8">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="color.js"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
         <h1><a href="index.html">WEB</a></h1>
 
-        <input id="night_day" type="button" value="night" onclick="
-            nightDayHandler(this);
-        ">
-
-        <ol>
-            <li><a href="1.html">HTML</a></li>
-            <li><a href="2.html">CSS</a></li>
-            <li><a href="3.html">JavaScript</a></li>
-        </ol>
-
-        <h2>WEB</h2>
-        <p>
-            The World Wide Web (WWW), commonly known as the Web, is an information system that enables information sharing over the Internet through user-friendly ways meant to appeal to users beyond IT specialists and hobbyists.<br>
-            It allows documents and other web resources to be accessed over the Internet according to specific rules of the Hypertext Transfer Protocol (HTTP).<br>
-        </p>
+        <div id="grid">
+            <div id="navigation">
+                <input id="night_day" type="button" value="night" onclick="
+                    nightDayHandler(this);
+                ">
+        
+                <ol>
+                    <li><a href="1.html">HTML</a></li>
+                    <li><a href="2.html">CSS</a></li>
+                    <li><a href="3.html">JavaScript</a></li>
+                </ol>
+            </div>
+            
+            <div id="article">
+                <h2>WEB</h2>
+                <p>
+                    The World Wide Web (WWW), commonly known as the Web, is an information system that enables information sharing over the Internet through user-friendly ways meant to appeal to users beyond IT specialists and hobbyists.<br>
+                    It allows documents and other web resources to be accessed over the Internet according to specific rules of the Hypertext Transfer Protocol (HTTP).<br>
+                </p>
+            </div>
+        </div>
     </body>
 </html>
