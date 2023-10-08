@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <script>
+            var grades = {
+                'list' : {'taeypark' : 10, 'hyeoan' : 10},
+                show : function() {
+                    for (var name in this.list) {
+                        console.log(name, this.list[name]);
+                    }
+                }
+            };
+            grades.show();
+        </script>
+    </body>
+</html>
